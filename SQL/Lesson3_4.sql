@@ -26,3 +26,5 @@ insert into student(major,name)
 values ('生物','小線'),('歷史','小線')
 RETURNING *;
 
+--
+DROP TABLE if exists STUDENT
