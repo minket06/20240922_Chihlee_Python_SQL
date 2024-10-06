@@ -13,6 +13,13 @@ CREATE TABLE IF NOT EXISTS public.tr
 ALTER TABLE public.tr  ADD CONSTRAINT tr_pkey PRIMARY KEY (id);
 ALTER TABLE public.tr ADD CONSTRAINT unique_code UNIQUE (code);
 ALTER TABLE public.tr ADD CONSTRAINT unique_name UNIQUE (name);
+ALTER TABLE public.tr ADD CONSTRAINT unique_e_name UNIQUE (e_name);
 
 ALTER TABLE public.tr ALTER COLUMN code SET NOT NULL;
 ALTER TABLE public.tr ALTER COLUMN name SET NOT NULL;
+
+ALTER TABLE public.tr  ALTER COLUMN name TYPE varchar(15);
+
+
+ALTER TABLE public.tr DROP CONSTRAINT unique_name;
+
