@@ -25,5 +25,20 @@ create table if not exists station_In_Out(
 select count(*) from station_In_Out;
 select * from station_In_Out;
 select * from station_In_Out where date <='2019/12/01';
+--******************************************
+SELECT * FROM STATION_IN_OUT
+SELECT * FROM STATIONS;
+
+SELECT 	DATE AS 日期,
+		gateincomingcnt as 進站人數,
+		gateoutgoingcnt as 出站人數,
+		stationname as 站名,
+		stationaddrtw as 地址,
+		stationtel as 電話
+FROM STATION_IN_out IN_OUT
+JOIN STATIONS S ON IN_OUT.STACODE=S.STATIONCODE
+where stationname='基隆';
+
+
 
 
