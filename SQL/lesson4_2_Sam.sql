@@ -1,3 +1,4 @@
+--source/台鐵車站資訊.csv
 create table if not exists stations(
 	stations_id serial primary key,
 	stationCode varchar(5) unique not null,
@@ -10,3 +11,19 @@ create table if not exists stations(
 );
 
 select * from stations;
+-- *************************************************
+create table if not exists station_In_Out(
+	date Date,
+	staCode varchar(5) not null,
+	gateInComingCnt integer,
+	gateOutGoingCnt integer,
+	primary key (date,staCode),
+	Foreign key (staCode) references stations(stationCode) 
+	ON delete SET NULL
+	ON UPDATE CASCADE --SET NULL
+);
+select count(*) from station_In_Out;
+select * from station_In_Out;
+select * from station_In_Out where date <='2019/12/01';
+
+
