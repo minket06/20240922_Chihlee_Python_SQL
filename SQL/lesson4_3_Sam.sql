@@ -20,7 +20,6 @@ select 	customer_id,
 		max(amount) as 最大,
 		min(amount) as 最小
 from payment
-from payment
 group by customer_id
 --order by count(amount) ASC;
 order by 筆數 asc;
