@@ -39,3 +39,34 @@ conda init --all bash
 
 --***取消termail一開始就進入base虛擬環境***
 conda config --set auto_activate_base false
+
+
+--***檢查目前已建立的虛擬環境***
+conda env list
+
+--***建立虛擬環境***
+conda create --name myenv python=3.10
+conda create --name envv1 python=3.11
+
+conda create --name chihlee_sql python=3.10
+
+--***啟動虛擬環境***
+conda activate myenv
+conda activate envv1
+
+conda activate chihlee_sql
+
+--***離開虛擬環境***
+conda deactivate
+
+
+--***刪除虛擬環境***
+conda env remove --name myenv
+conda env remove --name envv1
+
+conda env remove --name chihlee_sql
+
+--***ipython
+python
+exit()
+
