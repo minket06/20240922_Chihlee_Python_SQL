@@ -30,3 +30,12 @@ k6c739c2t9g-a.singapore-postgres.render.com/render_chillee_019
 server:dpg-crnsm2aj1k6c739c2t9g-a.singapore-postgres.render.com
 username : render_chillee_019_user
 pwd : Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc
+
+---------------------------
+conda --version
+
+--***conda init***
+conda init --all bash
+
+--***取消termail一開始就進入base虛擬環境***
+conda config --set auto_activate_base false
