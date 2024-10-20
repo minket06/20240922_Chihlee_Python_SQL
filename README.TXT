@@ -70,3 +70,22 @@ conda env remove --name chihlee_sql
 python
 exit()
 
+--*******安裝Jupyter notebook(VSCODE開發PYTHON，測試用，.ipynb)
+
+--************安裝套件psycopg2-binary*****(Python 和Postgresql通訊)
+pip install psycopg2-binary
+
+--***********使用套件 psycopg2************
+import psycopg2
+
+# Connect to your postgres DB
+conn = psycopg2.connect("dbname=test user=postgres")
+
+# Open a cursor to perform database operations
+cur = conn.cursor()
+
+# Execute a query
+cur.execute("SELECT * FROM my_data")
+
+# Retrieve query results
+records = cur.fetchall()
