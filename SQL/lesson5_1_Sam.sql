@@ -30,12 +30,12 @@ order by total desc --stacode
 -- 基隆火車站2020年,每月份進站人數
 select stacode,b.stationname,
 		DATE_PART('year',date) || '-' || LPAD(DATE_PART('month', date)::TEXT, 2, '0')  AS yearmonth,
-		sum(gateincomingcnt)
+		sum(gateincomingcnt) as total
 from station_in_out   a
 left join stations b on a.stacode=b.stationcode
 where date between '2020/01/01' and '2020/12/31' and stacode='900' 
 group by stacode,b.stationname,yearmonth
-order by stacode,b.stationname,yearmonth
+order by total desc
 ;
 
 -- 基隆火車站2020年,每月份進站人數,由多至少
