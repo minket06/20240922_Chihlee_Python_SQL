@@ -60,7 +60,7 @@ order by total desc
 ;
 
 -- 基隆火車站2020,2021,2022,每年進站人數
-select stacode,b.stationname,DATE_PART('year',date) as year ,sum(gateincomingcnt)
+select stacode,b.stationname,DATE_PART('year',date) as year ,sum(gateincomingcnt) as total
 from station_in_out a
 left join stations b on a.stacode=b.stationcode
 where date between '2020/01/01' and '2022/12/31'  and stacode='900' 
