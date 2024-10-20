@@ -86,10 +86,14 @@ where gateincomingcnt in (select max(gateincomingcnt) from station_in_out)
 ;
 
 -- 各站點進站人數最多的一筆
-select a.date,a.stacode,b.stationname,a.gateincomingcnt
+--select a.date,a.stacode,b.stationname,a.gateincomingcnt  as maxcnt
+select DISTINCT ON (gateincomingcnt) a.date,a.stacode,b.stationname,a.gateincomingcnt  as maxcnt
+--select *
 from station_in_out a
 left join stations b on a.stacode=b.stationcode
-where (stacode, gateincomingcnt) in (select stacode,max(gateincomingcnt) from station_in_out group by stacode)
-order by stacode, gateincomingcnt
+where (stacode, gateincomingcnt) in (select stacod	e,max(gateincomingcnt) from station_in_out group by stacode /*order by max(gateincomingcnt)*/ )
+      --and a.gateincomingcnt >0
+order by maxcnt desc--stacode, gateincomingcnt
 ;
+
 
