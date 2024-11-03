@@ -30,6 +30,25 @@ k6c739c2t9g-a.singapore-postgres.render.com/render_chillee_019
 server:dpg-crnsm2aj1k6c739c2t9g-a.singapore-postgres.render.com
 username : render_chillee_019_user
 pwd : Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc
+-----------------------新加坡_NEW1(1個月)
+render
+github帳號
+minket06@yahoo.com.tw
+https://dashboard.render.com/
+render_chilLee_019
+選新加坡
+PGSQL 16
+Free
+hostname : dpg-crnsm2aj1k6c739c2t9g-a
+databasename : render_chillee_019
+username : render_chillee_019_user
+password : Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc
+--public
+postgresql://render_chillee_019_user:Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc@dpg-crnsm2aj1
+k6c739c2t9g-a.singapore-postgres.render.com/render_chillee_019
+server:dpg-crnsm2aj1k6c739c2t9g-a.singapore-postgres.render.com
+username : render_chillee_019_user
+pwd : Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc
 
 ---------------------------
 conda --version
