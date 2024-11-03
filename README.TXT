@@ -7,7 +7,7 @@ git config --global user.name "minket06"
 git config --global user.email "minket06@yahoo.com.tw"
 git config --global pull.rebase false
 -----------------------教室內(RP4_a19)
-piRobert0301.local
+piRobert0301.local or 192.168.0.252
 
 a19
 raspberry
