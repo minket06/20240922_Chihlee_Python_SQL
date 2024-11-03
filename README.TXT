@@ -30,7 +30,7 @@ k6c739c2t9g-a.singapore-postgres.render.com/render_chillee_019
 server:dpg-crnsm2aj1k6c739c2t9g-a.singapore-postgres.render.com
 username : render_chillee_019_user
 pwd : Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc
------------------------新加坡_NEW1(1個月)--**************************************************
+--********************************新加坡_NEW1(1個月)--**************************************************
 render
 github帳號
 minket06@yahoo.com.tw
