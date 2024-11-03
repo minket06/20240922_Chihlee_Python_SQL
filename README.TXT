@@ -44,11 +44,10 @@ databasename : render_chillee_019
 username : render_chillee_019_yw7r_user
 password : 0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH
 --public
-postgresql://render_chillee_019_user:Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc@dpg-crnsm2aj1
-k6c739c2t9g-a.singapore-postgres.render.com/render_chillee_019
-server:dpg-crnsm2aj1k6c739c2t9g-a.singapore-postgres.render.com
-username : render_chillee_019_user
-pwd : Ff74F11wgiXrsNnVVjb3UtWWQHrRfKsc
+postgresql://render_chillee_019_yw7r_user:0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH@dpg-csjhpllsvqrc73escsm0-a.singapore-postgres.render.com/render_chillee_019_yw7r
+server:dpg-csjhpllsvqrc73escsm0-a.singapore-postgres.render.com
+username : render_chillee_019_yw7r_user
+pwd : 0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH
 
 ---------------------------
 conda --version
