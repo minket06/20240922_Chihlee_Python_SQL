@@ -120,3 +120,14 @@ POSTGRE_HOST=piRobert0301.local
 POSTGRE_DATABASE=mydatabase_a19
 POSTGRE_USER=a19
 POSTGRE_PASSWORD=raspberry
+
+HOST=piRobert0301.local
+DATABASE=mydatabase_a19
+USER=a19
+PASSWORD=raspberry
+
+HOST_RENDER=dpg-csjhpllsvqrc73escsm0-a.singapore-postgres.render.com
+DATABASE_RENDER=render_chillee_019_yw7r
+USER_RENDER=render_chillee_019_yw7r_user
+PASSWORD_RENDER=0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH
+
