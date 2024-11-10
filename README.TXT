@@ -52,6 +52,9 @@ pwd : 0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH
 --internal
 Internal Database URL : postgresql://render_chillee_019_yw7r_user:0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH@dpg-csjhpllsvqrc73escsm0-a/render_chillee_019_yw7r
 
+server:dpg-csjhpllsvqrc73escsm0-a
+username : render_chillee_019_yw7r_user
+pwd : 0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH
 ---------------------------
 conda --version
 
