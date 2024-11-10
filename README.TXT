@@ -108,4 +108,4 @@ cur.execute("SELECT * FROM my_data")
 # Retrieve query results
 records = cur.fetchall()
 
-pip install -r requirement.txt
+pip install -r requirements.txt
