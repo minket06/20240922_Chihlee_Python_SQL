@@ -109,3 +109,6 @@ cur.execute("SELECT * FROM my_data")
 records = cur.fetchall()
 
 pip install -r requirements.txt
+---------------------------------------------
+KCGPT2@mail.kcdairy.com.tw<mailto:KCGPT2@mail.kcdairy.com.tw>
+KC87518788#258
