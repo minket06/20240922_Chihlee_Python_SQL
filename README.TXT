@@ -114,3 +114,9 @@ KCGPT2@mail.kcdairy.com.tw<mailto:KCGPT2@mail.kcdairy.com.tw>
 KC87518788#258
 ----------------------------------------
 notion
+---------------------------------------
+.env
+POSTGRE_HOST=piRobert0301.local
+POSTGRE_DATABASE=mydatabase_a19
+POSTGRE_USER=a19
+POSTGRE_PASSWORD=raspberry
