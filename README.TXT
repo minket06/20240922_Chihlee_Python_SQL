@@ -49,6 +49,9 @@ server:dpg-csjhpllsvqrc73escsm0-a.singapore-postgres.render.com
 username : render_chillee_019_yw7r_user
 pwd : 0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH
 
+--internal
+Internal Database URL : postgresql://render_chillee_019_yw7r_user:0bnyu6zkSsEdhb4mlE8i7d72UsRR5SOH@dpg-csjhpllsvqrc73escsm0-a/render_chillee_019_yw7r
+
 ---------------------------
 conda --version
 
