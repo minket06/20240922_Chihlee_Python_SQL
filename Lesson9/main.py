@@ -9,8 +9,9 @@ import time
 
 # import datasource
 # from datasource import get_data
-from tools.datasource import get_data
-
+# from tools.datasource import get_data
+from tools import get_data 
+from pprint import pprint
 load_dotenv()
 
 # with st.spinner('下載資料中...'):
@@ -50,10 +51,18 @@ def alert():
 placeholder = st.empty()
 with placeholder:
     with st.spinner('下載資料中...'):
-        get_data()
+        youbikes = get_data()
+# alert()
+
+if youbikes is None:
+    alert()
+    
+pprint(youbikes)
+
     # st.success("下載完成",icon=":material/download:")
     # time.sleep(3)
 
 # placeholder.empty()
-alert()
+
 st.write("顯示頁面")
+st.write(youbikes)

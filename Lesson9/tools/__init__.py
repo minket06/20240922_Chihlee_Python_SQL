@@ -1,0 +1,1 @@
+from .__datasource2__ import get_data
