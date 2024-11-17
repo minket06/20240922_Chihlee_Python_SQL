@@ -10,7 +10,10 @@ import time
 # import datasource
 # from datasource import get_data
 # from tools.datasource import get_data
-from tools import get_data 
+
+# from tools import get_data 
+import tools
+
 from pprint import pprint
 load_dotenv()
 
@@ -48,10 +51,15 @@ def alert():
     st.write("連線有問題")
     st.stop()
 
-placeholder = st.empty()
-with placeholder:
-    with st.spinner('下載資料中...'):
-        youbikes = get_data()
+# placeholder = st.empty()
+# with placeholder:
+#     with st.spinner('下載資料中...'):
+#         youbikes = get_data()
+# # alert()
+
+with st.spinner('下載資料中...'):
+    youbikes:list[dict] = tools.get_data()
+    tools.save_to_database(youbikes)
 # alert()
 
 if youbikes is None:

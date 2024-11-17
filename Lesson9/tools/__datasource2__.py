@@ -21,3 +21,8 @@ def get_data()->list | None:#-> list or None#
         return None
     else:
         return response.json()
+    
+def save_to_database(data:list[dict])->None:#沒有傳出任何東西#
+        # pass
+        print(data)
+        print("data的資料要放進資料庫")
